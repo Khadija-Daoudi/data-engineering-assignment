@@ -1,8 +1,6 @@
-# Assignment: Data Engineering Kata for an ETL Pipeline
-
 ## Objective
 
-In this assignment, you will build an Extract, Transform, and Load (ETL) pipeline with a focus on [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) by performing the following tasks:
+In this assignment, you will build an [Extract, Transform, and Load (ETL)](https://en.wikipedia.org/wiki/Extract,_transform,_load) pipeline with a focus on [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) by performing the following tasks:
 
 1. Read data from a CSV file (`employee_details.csv`)
 2. Transform the data
