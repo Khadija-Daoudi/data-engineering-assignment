@@ -1,0 +1,21 @@
+version: '3.10'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+  app:
+    build: .
+    container_name: etl_app
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/app
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/
+
+volumes:
+  mongo-data:
